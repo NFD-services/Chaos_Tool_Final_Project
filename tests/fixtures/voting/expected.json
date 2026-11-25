@@ -1,0 +1,13 @@
+{
+  "_comment": "Ground truth from the voting app's architecture diagram. The static map must contain at least these. Edges point client -> server.",
+  "services": ["db", "redis", "result", "seed", "vote", "worker"],
+  "optional_services": ["seed"],
+  "dependency_edges": [
+    {"source": "service:result", "target": "service:db"},
+    {"source": "service:vote", "target": "service:redis"},
+    {"source": "service:worker", "target": "service:db"},
+    {"source": "service:worker", "target": "service:redis"}
+  ],
+  "entry_points": ["service:result", "service:vote"],
+  "networks": ["back-tier", "front-tier"]
+}
