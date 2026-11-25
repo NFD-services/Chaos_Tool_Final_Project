@@ -29,6 +29,9 @@ Semester B (if all goes well) - Google Online Boutique (Kubernetes manifests, gR
   each user GETs `/`, POSTs a random vote a/b, clears cookies so every vote is a
   new voter; run `locust -f locustfile.py --host http://localhost:8080`, UI on
   `:8089`; 20-50 users is enough for steady traffic).
+- GitHub: https://github.com/NFD-services/Chaos_Tool_Final_Project (org
+  `NFD-services`). `main` is protected: PR with 1 approval, CI `test (3.10)`
+  and `test (3.12)` must pass, branch up to date.
 - This repo: **Stage 0 (repo setup) and Stage 1 (model + schema) are done.**
   12 tests pass; 4 ground-truth tests are skipped until Stage 2.
 - **Next: Stage 2 - the compose parser** (`src/chaos_tool/parsers/compose.py`).
@@ -105,7 +108,8 @@ Severity: three levels (low / medium / high). No rule config file for now.
 
 ## How to work with the user
 
-- The user writes in Hebrew - reply in Hebrew (code and docs stay English).
+- Reply in English. The user may write in Hebrew, but Hebrew renders
+  backwards (no RTL support) in the WSL terminal.
 - The user wants to be actively involved: before writing code, break the work
   into parts, explain each part and the choices made, and ask design/code
   questions. Wait for approval before implementing.
