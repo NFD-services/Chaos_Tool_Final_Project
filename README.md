@@ -24,7 +24,7 @@ The first target is the [Docker Example Voting App](https://github.com/dockersam
 Requires Python 3.10+.
 
 ```bash
-git clone <repo-url> chaos-tool
+git clone https://github.com/NFD-services/Chaos_Tool_Final_Project.git chaos-tool
 cd chaos-tool
 python3 -m venv .venv
 source .venv/bin/activate
